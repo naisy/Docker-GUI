@@ -1,7 +1,7 @@
 # How to use the GUI with Docker.
 
 ## docker build Dockerfile
-Dockerfile:[./Dockerfile](./Dockerfile)
+Dockerfile: [./Dockerfile](./Dockerfile)
 ```
 sudo su
 docker build -t xterm .
