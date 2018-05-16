@@ -25,9 +25,9 @@ To say command:<br>
 >chown $(getent passwd 1000 | cut -d: -f1):$(getent group 1000 | cut -d: -f1) $HOME/.docker.xauth  
 
 And, Dockerfile creates new user with uid:1000 and gid:1000.<br>
->########################################  
-># Add new sudo user  
->########################################  
+>`########################################`  
+>`# Add new sudo user`  
+>`########################################`  
 >ENV USERNAME ubuntu  
 >RUN useradd -m $USERNAME && \  
 >        echo "$USERNAME:$USERNAME" | chpasswd && \  
