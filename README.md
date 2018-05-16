@@ -47,7 +47,7 @@ sudo su
 docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /home/$(getent passwd 1000 | cut -d: -f1)/.docker.xauth:/home/ubuntu/.docker.xauth:rw -v /root/.docker.xauth:/root/.docker.xauth:rw -e "DISPLAY" --user ubuntu xterm
 ```
 If you only use xterm, root user's Xauthority is not required.<br>
-However, it is necessary when using GUI application with sudo such as firefox.<br>
+However, it is necessary when using GUI application such as firefox with sudo.<br>
 
 ## Firefox with Japanese fonts
 example:
